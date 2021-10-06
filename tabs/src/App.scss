@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F1F5F8;
+}
+
+main{
+    .section{
+        width: 90vw;
+        max-width: 1170px;
+        display: flex;
+        margin: 5rem auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .title{
+            h2{
+                font-size: 40px;
+                margin-bottom: 12px;
+            }
+            .underline{
+                height: 5px;
+                background: #2CAEBA;
+                margin: 0 auto;
+                width: 5rem;
+                margin-bottom: 20px;
+
+            }
+        }
+        .jobs-center{
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 1rem 2rem;
+            width: 90vw;
+            margin: 0 auto;
+            .btn-container{
+                font-size: 20px;
+                text-transform: uppercase;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                .job-btn{
+                    border: none;
+                    background: transparent;
+                    margin: 0px 8px 16px;
+                    padding-top: 2px;
+                    font-size: 20px;
+                    &:hover{
+                        border-left: 1px solid #2caeba;
+                    color: #2caeba;
+                    }
+                }
+                .active{
+                    border-left: 1px solid #2caeba;
+                    color: #2caeba;
+
+                }
+            }
+            .job-info{
+                display: block;
+                h3{
+                    font-size: 28px;
+                    margin-bottom: 12px;
+                }
+                h4{
+                    background: #dae2ec;
+                    padding: 6px 12px;
+                    margin-bottom: 12px;
+                    text-transform: uppercase;
+                }
+                .job-date{
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+                .job-desc{
+                    display: grid;
+                    grid-template-columns: auto 1fr;
+                    grid-column-gap: 2rem;
+                    -webkit-column-gap: 2rem;
+                    column-gap: 2rem;
+                    align-items: center;
+                    margin-bottom: 1.25rem;
+                    
+                }
+
+            }
+
+        }
+    }
+}
